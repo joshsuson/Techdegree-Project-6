@@ -69,8 +69,8 @@ function checkWin() {
       overlay.classList.remove('lose');
     }
     overlay.classList.add('win');
-    headline.textContent = "You Win Friend!"
-    button.textContent = "Play Again!"
+    headline.textContent = "You Win Friend!";
+    button.textContent = "Play Again!";
     button.classList.remove('btn__reset');
     button.classList.add('finished');
 
@@ -80,9 +80,9 @@ function checkWin() {
     if (overlay.classList == 'win') {
       overlay.classList.remove('win');
     }
-    overlay.classList.add('lose')
-    headline.textContent = "Ah bummer! You ran out of guesses."
-    button.textContent = "Give it another try!"
+    overlay.classList.add('lose');
+    headline.textContent = "Ah bummer! You ran out of guesses.";
+    button.textContent = "Give it another try!";
     button.classList.remove('btn__reset');
     button.classList.add('finished');
   }
