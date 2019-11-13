@@ -55,6 +55,11 @@ button {
   transition: var(--transition);
 }
 
+button:hover {
+  background: var(--color-neutral);
+  color: #FFFFFF;
+}
+
 .main-container {
   display: flex;
   flex-direction: column;
@@ -83,6 +88,7 @@ button {
   width: 65px;
   padding: 20px 1px 0 1px;
   margin-right: 2px;
+  margin-bottom: 2px;
   color: transparent;
   background: var(--color-neutral-light);
   border-radius: 5px;
@@ -95,6 +101,7 @@ button {
 .show {
   color: #000;
   background-color: #76CE82;
+  transition: all 100ms ease-in-out;
 }
 
 /* Keyboard */
@@ -116,7 +123,30 @@ button {
   margin: 50px auto;
   background: #FFFFFF;
   border-radius: 5px;
+  border: solid #FFF 2px;
   font-size: var(--font-size-medium);
+
+}
+
+.btn__reset:hover {
+  background: none;
+  border: solid #FFF 2px;
+  color: white;
+}
+
+.finished {
+  padding: 8px;
+  margin: 50px auto;
+  background: #FFFFFF;
+  border-radius: 5px;
+  border: solid #FFF 2px;
+  font-size: var(--font-size-medium);
+}
+
+.finished:hover {
+  background: none;
+  border: solid #FFF 2px;
+  color: white;
 }
 
 /* Overlay */
@@ -143,7 +173,7 @@ button {
 }
 
 .start a {
-  color: var(--color-win);
+  color: var(--color-start);
 }
 
 .win {
